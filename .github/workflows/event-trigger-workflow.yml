@@ -1,13 +1,13 @@
-name: GitHub Actions Demo 
+name: Event Trigger Demo 
 run-name: Testing out GitHub Actions Event Trigger  
 on: 
   push: 
     branches: 
-      - master 
+      - main 
       - 'releases/**' 
   pull_request: 
     branches:
-      - master 
+      - main 
       - 'releases/**' 
 jobs: 
   Basic-Workflow: 
