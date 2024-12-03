@@ -19,10 +19,9 @@ jobs:
             ls -lart /tmp
 
       - name: Invoke Jenkins Deployment Job
-        uses: joshlk/jenkins-githubaction@master
+        uses: jenkinsci/jenkins-github-actions@v2
         with:
             url: http://54.86.38.57:8080/
-            job_name: GitHubActions_job
-            username: admin
-            api_token: ${{ secrets.JENKINS_TOKEN }}
-            timeout: "1000"
+            job: GitHubActions_job
+            token: ${{ secrets.JENKINS_TOKEN }}
+          
