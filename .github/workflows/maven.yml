@@ -22,7 +22,7 @@ jobs:
         uses: GoldenspearLLC/build-jenkins-job@master
         with:
             jenkins-url: "54.86.38.57:8080"
-            job-path: "/GitHubActions_job"
+            job-path: "job/GitHubActions_job"
             jenkins-token: ${{ secrets.JENKINS_TOKEN }}
             user: "admin"
           
