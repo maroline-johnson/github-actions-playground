@@ -21,7 +21,7 @@ jobs:
       - name: Invoke Jenkins Deployment Job
         uses: GoldenspearLLC/build-jenkins-job@master
         with:
-            jenkins-url: http://54.86.38.57:8080/
+            jenkins-url: "54.86.38.57:8080"
             job-path: "/var/lib/jenkins/jobs/GitHubActions_job"
             jenkins-token: ${{ secrets.JENKINS_TOKEN }}
             user: "admin"
