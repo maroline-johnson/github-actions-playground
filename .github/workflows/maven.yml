@@ -12,7 +12,7 @@ jobs:
           host: ${{ secrets.HOST }}
           user: ${{ secrets.USER }}
           pass: ${{ secrets.PASS }}
-          port: ${{ secrets.PORT }}
+          port: 22
           scp: |
             ./target/*.war => /tmp/
           last_ssh: |
