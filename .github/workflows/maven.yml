@@ -19,9 +19,10 @@ jobs:
             ls -lart /tmp
 
       - name: Invoke Jenkins Deployment Job
-        uses: jenkinsci/jenkins-github-actions@v2
+        uses: GoldenspearLLC/build-jenkins-job@master
         with:
-            url: http://54.86.38.57:8080/
-            job: GitHubActions_job
-            token: ${{ secrets.JENKINS_TOKEN }}
+            jenkins-url: http://54.86.38.57:8080/
+            job-path: "/var/lib/jenkins/jobs/GitHubActions_job"
+            jenkins-token: ${{ secrets.JENKINS_TOKEN }}
+            user: "admin"
           
